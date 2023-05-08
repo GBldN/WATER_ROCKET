@@ -56,7 +56,7 @@ Le système est décomposé en plusieurs sous ensembles :
 ### 5 - LES TESTS :
 - Banc de TEST DE RESISTANCE à la pression
   
-    Permet de vérifier la tenue à la pression des bouteilles de soda utilisées ici explosion à plus de 12 bars, mais aussi l'expension des dimensions de la fusée pendant la compression.
+    Permet de vérifier la tenue à la pression des bouteilles de soda utilisées ( explosion à plus de 12 bars), mais aussi l'expension des dimensions de la fusée pendant la compression.
   
 <img src="Banc test pression.jpg" alt="BANC TEST PRESSION" height=300> <img src="Bouteille explosée.jpg" alt="CRASH TEST" height=300>
 
