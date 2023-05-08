@@ -37,8 +37,10 @@ Le système est décomposé en plusieurs sous ensembles :
 
 <img src="Banc test poussée.jpg" alt="BANC TEST POUSSEE" height=300> <img src="Banc test poussée2.jpg" alt="BANC TEST POUSSEE2" height=300> <img src="Banc test poussée capteur.jpg" alt="CAPTEUR DE FORCE" height=300>
 
-- Les premiers tests en réel
-https://youtube.com/shorts/VSt-5mvT0KY?feature=share
+- LES PREMIERS ESSAIS EN EXTERIEUR
 
-https://youtube.com/shorts/n9TUfji-JI4
+  [Premier test]([https://www.planete-sciences.org/espace/Rocketry-Challenge/Presentation](https://youtube.com/shorts/n9TUfji-JI4))
+  
+  [Largage au ralenti](https://youtube.com/shorts/VSt-5mvT0KY?feature=share)
+
 
