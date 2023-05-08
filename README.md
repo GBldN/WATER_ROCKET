@@ -2,11 +2,12 @@
 <p align="center">
 <img src="Mise en situation.jpg" alt="Illustration" height=500>
 
-  
+
 ### 1- PROJET
 Dans le cadre de la spécialité sciences de l’ingénieur, le projet consiste à suivre les différentes étapes d’ingénierie nécessaires pour la conception d’une fusée à propulsion à eau et air comprimé et de sa base de lancement optimisées afin de répondre à un cahier des charges précis.
 
-  
+
+
 ### 2- LE CAHIER DES CHARGES
 Concevoir une fusée à propulsion à eau similaire aux fusées qui participent au concours [ROCKETRY CHALLENGE](https://www.planete-sciences.org/espace/Rocketry-Challenge/Presentation) organisé par planette science.
   
@@ -16,7 +17,8 @@ L’œuf doit revenir du vol sans aucune fissure ni dommage externe.
   
 Les principaux éléments du règlement et du cahier des charges sont reproduits (et parfois simplifiés) dans le [cahier des charges fonctionnel](FUSEE%20A%20EAU_CDCF%20PROJET.pdf)
 
-  
+
+
 ### 3 - LES SIMULATIONS :
 
 - Calcul du CX à partir d'une simulation aérodynamique
@@ -27,7 +29,8 @@ Les principaux éléments du règlement et du cahier des charges sont reproduits
 
 <img src="Simulation MECA3D Apogée.png" alt="Simulation mécanique" height=200> <img src="Courbe Force poussée.png" alt="Courbe poussée" height=200> <img src="Courbe poids eau.png" alt="Courbe poid eau" height=200>
 
-  
+
+
 ### 4 - MATERIEL :
 Le système est décomposé en plusieurs sous ensembles :
 - La RAMPE de lancement
@@ -43,6 +46,7 @@ Le système est décomposé en plusieurs sous ensembles :
 - la fusée à eau (en cours de fabrication)
 
 <img src="Fusée à eau MECA3D.png" alt="Simulation mécanique de la FUSEE" height=300> <img src="Montage.jpg" alt="Montage de la FUSEE" height=300>
+
 
 
 ### 5 - LES TESTS :
@@ -62,6 +66,7 @@ Le système est décomposé en plusieurs sous ensembles :
   [Premier test](https://youtube.com/shorts/n9TUfji-JI4)
   
   [Largage au ralenti](https://youtube.com/shorts/VSt-5mvT0KY?feature=share)
+
 
 
 ### 6 - LES PROGRAMMES :
