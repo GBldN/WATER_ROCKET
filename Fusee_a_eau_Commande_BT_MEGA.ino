@@ -89,9 +89,9 @@
   
 /* ##### PARAMETRES POUR LE MATERIEL ##### */
   #define t_declench              1500                            //Temps de pause après le déclenchement du tir pour laisser le temps au système d'agir...
-  #define Relais_Vanne            2                               //Relais de connexion de l'électrovanne
+  #define Relais_Vanne            4                               //Relais de connexion de l'électrovanne
   #define Relais_Pompe            3                               //Relais de connexion de la pompe
-  #define Relais_Compr            4                               //Relais de connexion du Compresseur
+  #define Relais_Compr            2                               //Relais de connexion du Compresseur
   #define Relais_Alarm            1                               //Relais de connexion de l'alarme 
   #define Tir_OFF                 180                             //Valeur du servomoteur lorsque le tir n'est pas commandé
   #define Tir_ON                  0                               //Valeur du servomoteur lorsque le tir est commandé
@@ -108,6 +108,7 @@
 
 /* -- Définition des variables pour l'état TOR ou les valeurs numériques des entrées -- */
   String        etat_reel       = "00";                           //état réel du système ("00", "01", "02"...)
+  String        etat_prec       = "00";                           //état précedent  du système ("00", "01", "02"...)
   String        etat_connecte   = "00";                           //mémorisation de la connexion
   String        etat_reg        = "00";                           //état demandé par la consigne de l'application smartphone ("01", "02"...)
   volatile long tics            = 0;                              //Variable pour enregister le nombre de tics total
@@ -221,7 +222,7 @@ void loop()
 
 
 /* -- Lecture des informations venant de l'application smartphone en BT ( envoyées sous forme d'une chaine de caractères du type "C**V%%%%P§§§Fin ") -- */
-  if( digitalRead(SWITCH_ManuBT) and Serial1.available())                                        //Si mode BT et si un caractère est reçu sur la liaison série
+  if( Serial1.available())                                        //Si mode BT et si un caractère est reçu sur la liaison série
   {
     longueur = Serial1.readBytes(chaine_recue,60);                                                //Lecture des données reçues dans le tableau de caractères "chaine_recue"
     mot = String(chaine_recue);
@@ -267,8 +268,18 @@ void loop()
     }
   }
   
- if ( digitalRead(SWITCH_ManuBT) == 0)  etat_reel = "08";                                   //Passage en mode manuel
+ if ( digitalRead(SWITCH_ManuBT) == 0 )  
+ {
+  if (etat_reel != "99") etat_prec = etat_reel;
+  etat_reel = "99";                                   //Passage en mode manuel
+ }
+ else
+ {
+    if ( etat_reel == "99" ) etat_reel = etat_prec;
+ }
 
+
+ 
 /* -- Gestion de l'avortement en cas d'appui sur le bouton -- */
  if ( digitalRead(BP_Avort_pin) == 0 and digitalRead(SWITCH_ManuBT) )  etat_reel = "01";    //Bouton d'avortement prioritaire en mode BT
 
@@ -314,17 +325,17 @@ void Gestion_ETATS(void)
 {
 if ( etat_reel == "00"  )     //NON CONNECTE
   {
+     relay.turn_off_channel(Relais_Compr);                    //COMMANDE de désactivation du Relais_Compresseur
+     relay.turn_off_channel(Relais_Pompe);                    //COMMANDE de désactivation de la pompe
+     relay.turn_off_channel(Relais_Alarm);                    //COMMANDE de désactivation de l'alarme
+     Servo_TIR.write(Tir_OFF);                                //Pilotage du servomoteur en position initiale
+     digitalWrite(LED_Rempl_pin, LOW);
+     digitalWrite(LED_Compr_pin, LOW);
+     digitalWrite(LED_Lance_pin, LOW);
+     
      if ( p_reel > 0.2 )  
      { etat_reel = "01";
-       relay.turn_off_channel(Relais_Compr);                  //COMMANDE de désactivation du Relais_Compresseur
-       relay.turn_off_channel(Relais_Pompe);                  //COMMANDE de désactivation de la pompe
-       relay.turn_off_channel(Relais_Alarm);                    //COMMANDE de désactivation de l'alarme
-       Servo_TIR.write(Tir_OFF);                              //Pilotage du servomoteur en position initiale
        
-       digitalWrite(LED_Avort_pin, LOW);
-       digitalWrite(LED_Rempl_pin, LOW);
-       digitalWrite(LED_Compr_pin, LOW);
-       digitalWrite(LED_Lance_pin, LOW);
      }
      else
      {
@@ -339,19 +350,21 @@ if ( etat_reel == "00"  )     //NON CONNECTE
      relay.turn_off_channel(Relais_Pompe);                    //COMMANDE de désactivation de la pompe
      relay.turn_off_channel(Relais_Alarm);                    //COMMANDE de désactivation de l'alarme
      Servo_TIR.write(Tir_OFF);                                //Pilotage du servomoteur en position initiale
-     
-     digitalWrite(LED_Avort_pin, HIGH);
      digitalWrite(LED_Rempl_pin, LOW);
      digitalWrite(LED_Compr_pin, LOW);
      digitalWrite(LED_Lance_pin, LOW);
      
-     if ( p_reel >= 0 ) relay.turn_on_channel(Relais_Vanne);  //COMMANDE d'activation de l'électrovanne jusqu'à ce qu'il n'y ai plus de pression
-     else 
+     if ( p_reel >= 0.1 ) 
      {
-      relay.turn_off_channel(Relais_Vanne);                   //COMMANDE de désactivation de l'électrovanne
-      etat_reel = "00";
+      relay.turn_on_channel(Relais_Vanne);  //COMMANDE d'activation de l'électrovanne jusqu'à ce qu'il n'y ai plus de pression
+      digitalWrite(LED_Avort_pin, HIGH);
      }
-     
+     else
+     {
+     relay.turn_off_channel(Relais_Vanne);                   //COMMANDE de désactivation de l'électrovanne
+     digitalWrite(LED_Avort_pin, LOW);
+     etat_reel = "00";
+     }
   }
   
   if ( etat_reel == "02" )    //VIDE Pret à remplir
@@ -483,12 +496,12 @@ if ( etat_reel == "00"  )     //NON CONNECTE
      }
   }
   
-  if ( etat_reel == "08" )    //MODE MANUEL
+  if ( etat_reel == "99" )    //MODE MANUEL
   {
       //Avortement prioritaire 
       if ( digitalRead(BP_Avort_pin) == 0 )
       { 
-        if ( digitalRead(BP_Lance_pin) == 0 )  v_reel = 0;      //Initialisation du volume d'eau réel en cas d'appui sur les 2 boutons Avortemment et TIR
+        if ( digitalRead(BP_Lance_pin) == 0 )  tics = 0;      //Initialisation du volume d'eau réel en cas d'appui sur les 2 boutons Avortemment et TIR
         relay.turn_on_channel(Relais_Vanne);
         digitalWrite(LED_Avort_pin, HIGH);
       }
