@@ -31,7 +31,7 @@ Le système est décomposé en plusieurs sous ensembles :
 
 - Le système de LARGAGE
 
-<img src="Lanceur femé.jpg" alt="FERME" height=300> <img src="Lanceur femé.jpg" alt="OUVERT" height=300>
+<img src="Lanceur fermé.jpg" alt="FERME" height=300> <img src="Lanceur ouvert.jpg" alt="OUVERT" height=300>
 
 - La VALISE d'automatisation
 
