@@ -40,9 +40,10 @@ Le système est décomposé en plusieurs sous ensembles :
 <img src="Lanceur fermé.jpg" alt="FERME" height=300> <img src="Lanceur ouvert.jpg" alt="OUVERT" height=300> <img src="Largage fermé.png" alt="OUVERT" height=300> <img src="Largage ouvert.png" alt="OUVERT" height=300>
 
 - La VALISE d'automatisation
-Elle est controlée par une carte à microcontroleur Arduino MEGA [programme ARDUINO pour carte MEGA](Fusee_a_eau_Commande_BT_MEGA.ino)
+
+    Elle est controlée par une carte à microcontroleur Arduino MEGA [programme ARDUINO pour carte MEGA](Fusee_a_eau_Commande_BT_MEGA.ino)
   
-Les différentes consignes de commande peuvent se faire en mode manuel avec 4 boutons poussoirs mais aussi en Bluetooth grâce à une application ANDROID programmé avec [APP INVENTOR](https://gallery.appinventor.mit.edu/?galleryid=ee9647f1-101d-46b4-a1c1-f9438da695b3)
+    Les différentes consignes de commande peuvent se faire en mode manuel avec 4 boutons poussoirs mais aussi en Bluetooth grâce à une application ANDROID programmé avec [APP INVENTOR](https://gallery.appinventor.mit.edu/?galleryid=ee9647f1-101d-46b4-a1c1-f9438da695b3)
 
 <img src="Valise.jpg" alt="VALISE" height=300>
 
