@@ -31,7 +31,7 @@ Le système est décomposé en plusieurs sous ensembles :
 
 - Le système de LARGAGE
 
-<img src="Lanceur fermé.jpg" alt="FERME" height=300> <img src="Lanceur ouvert.jpg" alt="OUVERT" height=300>
+<img src="Lanceur fermé.jpg" alt="FERME" height=300> <img src="Lanceur ouvert.jpg" alt="OUVERT" height=300> <img src="Largage fermé.png" alt="OUVERT" height=300> <img src="Largage ouvert.png" alt="OUVERT" height=300>
 
 - La VALISE d'automatisation
 
@@ -51,7 +51,10 @@ Le système est décomposé en plusieurs sous ensembles :
 
 <img src="Banc test poussée.jpg" alt="BANC TEST POUSSEE" height=300> <img src="Banc test poussée2.jpg" alt="BANC TEST POUSSEE2" height=300> <img src="Banc test poussée capteur.jpg" alt="CAPTEUR DE FORCE" height=300>
 
-- LES PREMIERS ESSAIS EN EXTERIEUR
+ [Vidéo test poussée](https://youtube.com/shorts/VaxSK4kgV1k)
+ 
+ 
+-LES PREMIERS ESSAIS EN EXTERIEUR
 
   [Premier test](https://youtube.com/shorts/n9TUfji-JI4)
   
