@@ -28,7 +28,7 @@ Le système est décomposé en plusieurs sous ensembles :
 <img src="Fusée à eau MECA3D.png" alt="Simulation mécanique de la FUSEE" height=300> <img src="Montage.jpg" alt="Montage de la FUSEE" height=300>
 
 
-### 2 - LES TESTS :
+### 3 - LES TESTS :
 - Banc de TEST DE RESISTANCE à la pression
 
 <img src="Banc test pression.jpg" alt="BANC TEST PRESSION" height=300> <img src="Bouteille explosée.jpg" alt="CRASH TEST" height=300>
@@ -44,3 +44,12 @@ Le système est décomposé en plusieurs sous ensembles :
   [Largage au ralenti](https://youtube.com/shorts/VSt-5mvT0KY?feature=share)
 
 
+### 4 - LES SIMULATIONS :
+
+- Calcul du CX à partir d'une simulation aérodynamique
+
+<img src="simulation fusée V1 25 m.s-1.png" alt="Simulation aerodynamique" height=300>  <img src="Maitre couple (surface frontale).png" alt="maitre couple" height=300> 
+
+- Calcul de l'apogée théorique à partir de simulation Mécanique
+
+<img src="Simulation MECA3D Apogée.png" alt="Simulation mécanique" height=300>
