@@ -39,7 +39,7 @@ Le système est décomposé en plusieurs sous ensembles :
 
 - LES PREMIERS ESSAIS EN EXTERIEUR
 
-  [Premier test]([https://www.planete-sciences.org/espace/Rocketry-Challenge/Presentation](https://youtube.com/shorts/n9TUfji-JI4))
+  [Premier test](https://youtube.com/shorts/n9TUfji-JI4)
   
   [Largage au ralenti](https://youtube.com/shorts/VSt-5mvT0KY?feature=share)
 
