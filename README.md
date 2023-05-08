@@ -48,8 +48,8 @@ Le système est décomposé en plusieurs sous ensembles :
 
 - Calcul du CX à partir d'une simulation aérodynamique
 
-<img src="simulation fusée V1 25 m.s-1.png" alt="Simulation aerodynamique" height=300>  <img src="Maitre couple (surface frontale).png" alt="maitre couple" height=300> 
+<img src="simulation fusée V1 25 m.s-1.png" alt="Simulation aerodynamique" height=200>  <img src="Maitre couple (surface frontale).png" alt="maitre couple" height=200> 
 
 - Calcul de l'apogée théorique à partir de simulation Mécanique
 
-<img src="Simulation MECA3D Apogée.png" alt="Simulation mécanique" height=300>
+<img src="Simulation MECA3D Apogée.png" alt="Simulation mécanique" height=200> <img src="Courbe Force poussée.png" alt="Courbe poussée" height=200> <img src="Courbe poids eau.png" alt="Courbe poid eau" height=200>
