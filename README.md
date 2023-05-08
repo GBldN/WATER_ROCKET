@@ -22,8 +22,12 @@ Le système est décomposé en plusieurs sous ensembles :
 
 
 ### 2 - LES TESTS :
-- Le banc de test de pression
-<img src="Valise.jpg" alt="VALISE" height=300>
+- Banc de TEST DE RESISTANCE à la pression
+<img src="Banc test pression.jpg" alt="BANC TEST PRESSION" height=300> <img src="Bouteille explosée.jpg" alt="CRASH TEST" height=300>
+- Banc de TEST DE POUSSEE
+<img src="Banc test poussée.jpg" alt="BANC TEST POUSSEE" height=300> <img src="Banc test poussée 2.jpg" alt="BANC TEST POUSSEE2" height=300> <img src="Banc test poussée capteur.jpg" alt="CAPTEUR DE FORCE" height=300>
 
+Banc test poussée capteur.jpg
 
 https://youtube.com/shorts/VSt-5mvT0KY?feature=share
+https://youtube.com/shorts/n9TUfji-JI4
