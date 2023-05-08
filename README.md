@@ -4,7 +4,7 @@
 
   
 ### 1- PROJET
-Dans le cadre de la spécialité sciences de l’ingénieur, le projet consiste à suivre les différentes étapes d’ingénierie nécessaires pour la conception d’une fusée à eaux et des sa base de lancement optimisée pour répondre à un cahier des charges précis.
+Dans le cadre de la spécialité sciences de l’ingénieur, le projet consiste à suivre les différentes étapes d’ingénierie nécessaires pour la conception d’une fusée à propulsion à eau et air comprimé et de sa base de lancement optimisées afin de répondre à un cahier des charges précis.
 
   
 ### 2- LE CAHIER DES CHARGES
