@@ -14,20 +14,31 @@ Les principaux éléments du règlement et du cahier des charges sont reproduits
 ### 2 - MATERIEL :
 Le système est décomposé en plusieurs sous ensembles :
 - La RAMPE de lancement
+
 - Le système de LARGAGE
+
 <img src="Lanceur femé.jpg" alt="FERME" height=300> <img src="Lanceur femé.jpg" alt="OUVERT" height=300>
+
 - La VALISE d'automatisation
+
 <img src="Valise.jpg" alt="VALISE" height=300>
+
 - la fusée à eau
+
+<img src="Fusée à eau MECA3D.png" alt="Simulation mécanique de la FUSEE" height=300> <img src="Montage.jpg" alt="Montage de la FUSEE" height=300>
 
 
 ### 2 - LES TESTS :
 - Banc de TEST DE RESISTANCE à la pression
+
 <img src="Banc test pression.jpg" alt="BANC TEST PRESSION" height=300> <img src="Bouteille explosée.jpg" alt="CRASH TEST" height=300>
+
 - Banc de TEST DE POUSSEE
-<img src="Banc test poussée.jpg" alt="BANC TEST POUSSEE" height=300> <img src="Banc test poussée 2.jpg" alt="BANC TEST POUSSEE2" height=300> <img src="Banc test poussée capteur.jpg" alt="CAPTEUR DE FORCE" height=300>
 
-Banc test poussée capteur.jpg
+<img src="Banc test poussée.jpg" alt="BANC TEST POUSSEE" height=300> <img src="Banc test poussée2.jpg" alt="BANC TEST POUSSEE2" height=300> <img src="Banc test poussée capteur.jpg" alt="CAPTEUR DE FORCE" height=300>
 
+- Les premiers tests en réel
 https://youtube.com/shorts/VSt-5mvT0KY?feature=share
+
 https://youtube.com/shorts/n9TUfji-JI4
+
