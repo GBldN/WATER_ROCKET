@@ -29,6 +29,8 @@ Les principaux éléments du règlement et du cahier des charges sont reproduits
 
 <img src="Simulation MECA3D Apogée.png" alt="Simulation mécanique" height=200> <img src="Courbe Force poussée.png" alt="Courbe poussée" height=200> <img src="Courbe poids eau.png" alt="Courbe poid eau" height=200>
 
+ [Vidéo de la simulation](https://youtu.be/bQ_ySXu53Rc)
+
 
 
 ### 4 - MATERIEL :
