@@ -9,7 +9,7 @@ Dans le cadre de la spécialité sciences de l’ingénieur, le projet consiste 
 Concevoir une fusée à propulsion à eau similaire aux fusées qui participent au concours [ROCKETRY CHALLENGE](https://www.planete-sciences.org/espace/Rocketry-Challenge/Presentation) organisé par planette science.
 Dans ce concours, il s'agit de propulser un œuf de poule cru d’une masse comprise entre 55 et 61 grammes et d’un diamètre de 45 mm maximum (orientation libre). 
 L’œuf doit revenir du vol sans aucune fissure ni dommage externe.
-Les principaux éléments du règlement et du cahier des charges sont reproduits (et parfois simplifiés) dans le [cahier des charges fonctionnel]([FUSEE A EAU_CDCF PROJET.pdf](https://github.com/GBldN/WATER_ROCKET/blob/main/FUSEE%20A%20EAU_CDCF%20PROJET.pdf))
+Les principaux éléments du règlement et du cahier des charges sont reproduits (et parfois simplifiés) dans le [cahier des charges fonctionnel](FUSEE%20A%20EAU_CDCF%20PROJET.pdf)
 
 ### 2 - MATERIEL :
 Le système est décomposé en plusieurs sous ensembles :
