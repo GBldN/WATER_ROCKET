@@ -17,3 +17,4 @@ Dans le cadre de la spécialité sciences de l’ingénieur, le projet consiste 
  <img src="Prototype_V2.jpg" alt="proto V2" height=300> <img src="Schéma électrique.png" alt="Schéma électrique proto V2" height=300>
   
 
+https://youtube.com/shorts/VSt-5mvT0KY?feature=share
